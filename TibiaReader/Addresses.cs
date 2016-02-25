@@ -62,6 +62,30 @@ namespace TibiaReader
 			}
 		}
 
+		public UInt32 Experience
+		{
+			get
+			{
+				return baseAddress + 0x534660;
+			}
+		}
+
+		public UInt32 Level
+		{
+			get
+			{
+				return baseAddress + 0x534670;
+			}
+		}
+
+		public UInt32 MagicLevel
+		{
+			get
+			{
+				return baseAddress + 0x534678;
+			}
+		}
+
 		public Addresses(UInt32 baseAddress)
 		{
 			this.baseAddress = baseAddress;

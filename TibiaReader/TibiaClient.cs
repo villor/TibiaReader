@@ -111,6 +111,30 @@ namespace TibiaReader
 			}
 		}
 
+		public int Experience
+		{
+			get
+			{
+				return reader.ReadInt32(addr.Experience);
+			}
+		}
+
+		public int Level
+		{
+			get
+			{
+				return reader.ReadInt32(addr.Level);
+			}
+		}
+
+		public int MagicLevel
+		{
+			get
+			{
+				return reader.ReadInt32(addr.MagicLevel);
+			}
+		}
+
 		public TibiaClient(Process process)
 		{
 			this.process = process;
