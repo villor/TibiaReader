@@ -9,6 +9,8 @@ The library can currently read the following values from clients of version 10.9
 * Maximum Health
 * Mana
 * Maximum Mana
+* Player name
+* Position (X, Y, Z)
 
 More will be added in the future!
 
