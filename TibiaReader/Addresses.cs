@@ -46,6 +46,22 @@ namespace TibiaReader
 			}
 		}
 
+		public UInt32 PlayerId
+		{
+			get
+			{
+				return baseAddress + 0x6D202C;
+			}
+		}
+
+		public UInt32 BattleList
+		{
+			get
+			{
+				return baseAddress + 0x72DE20;
+			}
+		}
+
 		public Addresses(UInt32 baseAddress)
 		{
 			this.baseAddress = baseAddress;
