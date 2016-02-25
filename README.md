@@ -11,6 +11,8 @@ The library can currently read the following values from clients of version 10.9
 * Maximum Mana
 * Player name
 * Position (X, Y, Z)
+* Experience and level
+* Magic level
 
 More will be added in the future!
 
@@ -22,7 +24,7 @@ var tibiaClients = TibiaClient.GetClients();
 
 foreach (var tibia in tibiaClients)
 {
-    Console.WriteLine("Client: " + tibia.WindowTitle);
+    Console.WriteLine("Player: " + tibia.PlayerName);
     Console.WriteLine("HP: {0}/{1}", tibia.Health, tibia.MaxHealth);
     Console.WriteLine("Mana: {0}/{1}\n", tibia.Mana, tibia.MaxMana);
 }
