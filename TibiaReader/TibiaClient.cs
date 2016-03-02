@@ -14,6 +14,12 @@ namespace TibiaReader
 		private MemoryReader reader;
 		private Addresses addr;
 
+		public Process Process {
+			get {
+				return process;
+			}
+		}
+
 		public UInt32 BaseAddress {
 			get {
 				return (UInt32)process.MainModule.BaseAddress.ToInt32();
@@ -125,6 +131,10 @@ namespace TibiaReader
 				clients.Add(new TibiaClient(p));
 			}
 			return clients;
+		}
+
+		public override string ToString() {
+			return WindowTitle;
 		}
 	}
 }
